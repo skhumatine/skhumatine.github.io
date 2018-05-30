@@ -1,11 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<h1> Hello </h1>
-<h2>World </h2>
+<title>Skhumbuzo Matine Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 120px;background: #222;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 120px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <!-- Avatar image in top left corner -->
+    <img src="src/images/greyscale.png" alt="my avatar" style="width:100%">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+        <i class="fa fa-home w3-xxlarge"></i>
+        <p>HOME</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-user w3-xxlarge"></i>
+        <p>ABOUT</p>
+    </a>
+    <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-eye w3-xxlarge"></i>
+        <p>PORTFOLIO</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-envelope w3-xxlarge"></i>
+        <p>CONTACT</p>
+    </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+        <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+        <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PORTFOLIO</a>
+        <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+    <!-- Header/Home -->
+    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+        <h1 class="w3-jumbo"><span class="w3-hide-small">Hi there I'm</span></h1>
+        <h2 class="w3-xxxlarge">Skhumbuzo Matine.</h2>
+        <p>Engineering student by day, Software Developer by night.</p>
+        <img src="src/images/greyscale.png" alt="avatar big" class="w3-image" width="992" height="800">
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+        <h2 class="w3-text-light-grey">A little about me</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <p>
+            Born in a small township North of Durban(KwaZulu Natal, South Africa), 18 years later I somehow found myself at the University of Cape Town starting my studies in Electrical Engineering.
+            Two years later, after a period of 'hectic' reading and binge watching internet videos.I gained new super powers, realising that I was now capable of telling
+            machines what to do, my first website was born. Since then I never turned back and have been learning to talk to different devices as well as new ways to talk to them.
+
+        </p>
+
+        <p> Hopefully one day I can command them to do something that will be helpful to mankind.
+            Until then, I mostly offer my services to start-ups at discount prices, sometimes in exchange for equity.
+        </p>
+
+        <h3 class="w3-padding-16 w3-text-light-grey">What I think I'm good at  ¯\_(ツ)_/¯</h3>
+        <p class="w3-wide">MEAN and MERN stack (Mongo, Express, Angular.js Node, React)</p>
+        <div class="w3-white">
+            <div class="w3-dark-grey" style="height:28px;width:75%"></div>
+        </div>
+
+        <p class="w3-wide">React Native (Android and IOS)</p>
+        <div class="w3-white">
+            <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+        </div>
+
+        <p class="w3-wide">Java, Python, C & C++</p>
+        <div class="w3-white">
+            <div class="w3-dark-grey" style="height:28px;width:65%"></div>
+        </div><br>
+
+        <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">2+</span><br>
+                Partners
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">3+</span><br>
+                Projects Done
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">5+</span><br>
+                Happy Clients
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">2+</span><br>
+                Meetings
+            </div>
+        </div>
+
+        <a href="src/docs/Skhumbuzo_Matine_2018_CV.pdf" target="_blank">
+        <button class="w3-button w3-light-grey w3-padding-large w3-section" >
+                <i class="fa fa-download"></i> Download Resume
+        </button>
+        </a>
+
+        <!-- Grid for pricing tables -->
+        <h3 class="w3-padding-16 w3-text-light-grey">How much my time might cost you.</h3>
+
+        <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half w3-margin-bottom">
+                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                    <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+                    <li class="w3-padding-16">Web Design or Mobile (Android & IOS)</li>
+                    <li class="w3-padding-16">Basic Maintenance</li>
+                    <li class="w3-padding-16">Some Updates</li>
+                    <li class="w3-padding-16">Performance Optimization</li>
+                    <li class="w3-padding-16">
+                        <h2>Max R 15k</h2>
+                        <span class="w3-opacity">per month</span>
+                    </li>
+                    <li class="w3-light-grey w3-padding-24">
+                        <a href="#contact" >
+                            <button class="w3-button w3-white w3-padding-large w3-hover-black">Let's talk</button>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w3-half">
+                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                    <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+                    <li class="w3-padding-16">Web Design and Mobile (Android & IOS)</li>
+                    <li class="w3-padding-16">Dedicated Maintenance</li>
+                    <li class="w3-padding-16">MOst Updates</li>
+                    <li class="w3-padding-16">Performance Optimization</li>
+                    <li class="w3-padding-16">Priority Support</li>
+                    <li class="w3-padding-16">
+                        <h2>Min R 15k</h2>
+                        <span class="w3-opacity">per month</span>
+                    </li>
+                    <li class="w3-light-grey w3-padding-24">
+                        <a href="#contact" >
+                            <button class="w3-button w3-white w3-padding-large w3-hover-black">Let's talk</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End Grid/Pricing tables -->
+        </div>
+
+        <!-- Testimonials -->
+        <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>
+        <img src="src/images/ovadia_avatar.jpeg" alt="Ovadia Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Jonathan Ovadia.</span> CEO at OVEX.</p>
+        <p>The guy knows what he's doing.</p><br>
+
+        <img src="//style.anu.edu.au/_anu/4/images/placeholders/person.png"
+             alt="No Avatar for Alex"
+             class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Alexander Whiting.</span> CEO at OVSoft.</p>
+        <p>Skhumbuzo saved us a lot of time.</p><br>
+
+        <img src="//style.anu.edu.au/_anu/4/images/placeholders/person.png"
+             alt="No Avatar for Claris"
+             class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Claris Tigere.</span> Founder at iMedicus.</p>
+        <p>Very accommodating developer.</p>
+        <!-- End About Section -->
+    </div>
+
+    <!-- Portfolio Section -->
+    <div class="w3-padding-64 w3-content" id="photos">
+        <h2 class="w3-text-light-grey">Stuff I've Worked on</h2>
+        <hr style="width:200px" class="w3-opacity">
+
+        <!-- Grid for photos -->
+        <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+                <img src="src/images/ingaphi.jpg" style="width:100%">
+                <img src="src/images/udocPortal.png" style="width:100%">
+                <img src="src/images/magic.PNG" style="width:100%">
+            </div>
+
+            <div class="w3-half">
+                <img src="src/images/uDoc.png" style="width:100%">
+                <img src="src/images/ingaphi.PNG" style="width:100%">
+                <img src="src/images/ingaphiLogo.jpg" style="width:100%">
+            </div>
+            <!-- End photo grid -->
+        </div>
+        <!-- End Portfolio Section -->
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+        <h2 class="w3-text-light-grey">Contact Me</h2>
+        <hr style="width:200px" class="w3-opacity">
+
+        <!-- Contact details -->
+        <div class="w3-section">
+            <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Cape Town, RSA</p>
+            <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +27 73 101 4364</p>
+            <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: contact@skhumbuzomatine.me</p>
+        </div>
+        <!-- Google Map -->
+        <div id="googleMap" class="w3-greyscale-max" style="width:100%;height:300px;margin:36px 0;"></div>
+
+        <br>
+        <p>Lets get in touch. Send me a message:</p>
+
+        <form action="mailto:admin@skhumbuzomatine.me" method="post" enctype="text/plain">
+            <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+            <p><input class="w3-input w3-padding-16" type="email" placeholder="Email" required name="Email"></p>
+            <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+            <p>
+                <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+                    <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                </button>
+            </p>
+        </form>
+        <!-- End Contact Section -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+
+        <a href="https://www.facebook.com/skhumatine" target="_blank" class="w3-hover-text-green"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+
+        <a href="https://twitter.com/s_matine" target="_blank" class="w3-hover-text-green"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+
+        <a href="https://medium.com/@skhumbuzomatine" target="_blank" class="w3-hover-text-green"><i class="fa fa-medium w3-hover-opacity"></i></a>
+
+        <a href="https://github.com/skhumatine" target="_blank" class="w3-hover-text-green"><i class="fa fa-github w3-hover-opacity"></i></a>
+
+        <a href="https://www.linkedin.com/in/skhumbuzo-matine-8855b374" target="_blank" class="w3-hover-text-green"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+
+        <!-- End footer -->
+    </footer>
+
+    <!-- END PAGE CONTENT -->
+</div>
+
+
+
+<!-- Add Google Maps -->
+<script>
+    function myMap()
+    {
+        myCenter=new google.maps.LatLng(-33.94708794283854, 18.469803931828892);
+        var mapOptions= {
+            center:myCenter,
+            zoom:12, scrollwheel: false, draggable: false,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+        var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+        var marker = new google.maps.Marker({
+            position: myCenter
+        });
+        marker.setMap(map);
+    }
+
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATC4fitvdd94xacpyQBGIiBPTXheXrW1M&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
 </body>
 </html>
